@@ -30,7 +30,7 @@ public class LinkedStack<T> implements StackInterface<T>
      */
     public LinkedStack()
     {
-        topNode = new Node<T>(null);
+        topNode = null;
         size = 0;
     }
     
@@ -151,6 +151,7 @@ public class LinkedStack<T> implements StackInterface<T>
         private Node(T data)
         {
             this.data = data;
+            next = null;
         }
         
         private Node<T> getNextNode()

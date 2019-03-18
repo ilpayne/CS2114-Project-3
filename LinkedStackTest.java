@@ -24,7 +24,9 @@ public class LinkedStackTest extends student.TestCase
      */
     public void setup()
     {
-        lstack = new LinkedStack<>();
+        lstack = new LinkedStack<String>();
+        lstack.push("test");
+        lstack.push("test2");
     }
     
     /**
